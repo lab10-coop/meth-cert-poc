@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Übersicht Zertifizierungsstelle</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link href='css/style-responsive.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header>
+    <div class="headerInner">
+        <h1>
+            <span class="line1">Übersicht </span>
+            <span class="line2">Zertifizierungsstelle</span>
+        </h1>
+        <div class="selectUser">
+            <select id="preset-selector">
+                <option hidden selected>Beispiel-Gutachter wählen</option>
+                <option value="reviewer1">Herbert Schmidhammer</option>
+                <option value="reviewer2">Dorothea Fenstermacher</option>
+            </select>
+        </div>
+    </div>
+</header>
+<section class="main">
+    <div class="sectionInner">
+
+        <h2><span>Unsignierte Zertifikate</span></h2>
+
+        <div class="unsignedCertificates">
+
+            <form>
+                <div class="unsignedCertificatesHeadline">
+                    <div class="column col1">Unternehmen</div>
+                    <div class="column col2">Chargen-ID</div>
+                    <div class="column col3">Menge in kWh</div>
+                    <div class="column col4">PDF</div>
+                    <div class="column col5"><input type="checkbox" class="selectAll"></div>
+                    <div class="clear"></div>
+                </div>
+
+                <div id="unsigned-cert-list">
+
+                </div>
+
+                <div class="submitContainer">
+                    <input id='signCertsBtn' class="btn btn-default" readonly value="Signieren">
+                </div>
+            </form>
+
+
+        </div>
+
+
+        <h2><span>Signierte Zertifikate</span></h2>
+        <div class="signedCertificates">
+
+            <div class="signedCertificatesHeadline">
+                <div class="column col1">Unternehmen</div>
+                <div class="column col2">Chargen-ID</div>
+                <div class="column col3">Menge in kWh</div>
+                <div class="column col4">PDF</div>
+                <!--<div class="column col5">Gutachter</div>-->
+                <div class="clear"></div>
+            </div>
+
+            <div id="signed-cert-list">
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+<footer>
+    <p>Demo v.0.1 / May 2017 / <a href="produce.html">.</a><a href="produce_manual.html">.</a><a
+            href="certify.html">.</a><a href="certificate-pdf.html" target="_blank">.</a></p>
+</footer>
+
+<script
+        src="lib/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="lib/web3.js"></script>
+<script type="text/javascript" src="js/contracts.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/web3-init.js"></script>
+<script type="text/javascript" src="js/certify.js"></script>
+</body>
+</html>

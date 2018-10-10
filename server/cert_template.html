@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zertifikat-PDF generieren</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href='../frontend/css/style.css' rel='stylesheet' type='text/css'>
+    <link href='../frontend/css/style-responsive.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="certificatePDF">
+  <div class="certificateBG">
+    <div class="certificateContent">
+        <div class="certItems">
+            <!-- EXAMPLE
+            <div class="certItem">
+                <div class="certItemLabel">LABEL</div>
+                <div class="certItemValue">VALUE</div>
+            </div>
+            -->
+
+            %%CERT_ITEMS%%
+        </div>
+
+        <div class="certCryptoItems">
+            <!-- EXAMPLE
+            <div class="certCryptoItem">
+                <div class="certItemLabel">LABEL</div>
+                <div class="certItemValue"><a href="URL" target="_blank">VALUE</a></div>
+            </div>
+            -->
+
+            %%CERT_CRYPTO_ITEMS%%
+        </div>
+    </div>
+  </div>
+</body>
+</html>
